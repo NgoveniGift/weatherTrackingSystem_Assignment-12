@@ -56,13 +56,6 @@ README.md
 
 All endpoints accept and return JSON payloads. Example payload:
 
-```json
-{
-  "id": "r001",
-  "temperature": 23.5,
-  "humidity": 65.2,
-  "description": "Cloudy"
-}
 
 
 Testing
