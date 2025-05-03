@@ -64,7 +64,9 @@ All endpoints accept and return JSON payloads. Example payload:
   "description": "Cloudy"
 }
 
+
 Testing
+
 
 Run the tests:
 
@@ -79,6 +81,7 @@ POST + GET flow.
 
 API returns correct content type and structure.
 
+
 OpenAPI Documentation
 
 The API is documented using OpenAPI 3.0 (openapi.yaml). It can be visualized using:
@@ -86,6 +89,7 @@ The API is documented using OpenAPI 3.0 (openapi.yaml). It can be visualized usi
 Swagger Editor
 
 ReDoc
+
 
 🛠 Technologies
 
