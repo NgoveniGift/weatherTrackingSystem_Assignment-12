@@ -1,1 +1,81 @@
+openapi: 3.0.0
+info:
+  title: Weather Tracking System API
+  version: 1.0.0
+  description: API for creating and retrieving weather reports.
+servers:
+  - url: http://localhost:8000/api
+paths:
+  /weather:
+    get:
+      summary: Get all weather reports
+      operationId: getWeatherReports
+      responses:
+        '200':
+          description: List of weather reports
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherReport'
+    post:
+      summary: Create a new weather report
+      operationId: createWeatherReport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WeatherReportInput'
+      responses:
+        '201':
+          description: Weather report created
+        '400':
+          description: Invalid input
+  /weather/{id}:
+    get:
+      summary: Get weather report by ID
+      operationId: getWeatherReportById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A weather report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeatherReport'
+        '404':
+          description: Report not found
+components:
+  schemas:
+    WeatherReport:
+      type: object
+      properties:
+        id:
+          type: string
+        temperature:
+          type: number
+        wind_speed:
+          type: number
+        humidity:
+          type: number
+        timestamp:
+          type: string
+          format: date-time
+    WeatherReportInput:
+      type: object
+      required: [temperature, wind_speed, humidity]
+      properties:
+        temperature:
+          type: number
+        wind_speed:
+          type: number
+        humidity:
+          type: number
 
