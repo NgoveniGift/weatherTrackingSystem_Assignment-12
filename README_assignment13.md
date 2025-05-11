@@ -47,6 +47,7 @@ release-artifact:
       with:
         name: weather-artifact
         path: weather-tracking-system.zip
+```
 ---
 
 ## 🔐 Branch Protection
