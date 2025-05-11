@@ -23,5 +23,4 @@ Branch protection rules are configured under:
 
 ---
 
-> These protections are a foundational part of our CI/CD pipeline and promote team accountability, quality assurance, and deployment readiness.
 
