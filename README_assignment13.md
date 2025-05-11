@@ -33,6 +33,20 @@ The CI/CD pipeline is configured in `.github/workflows/ci.yml`. It performs the 
   - Archive the full project as `weather-tracking-system.zip`
   - Upload as an artifact using GitHub Actions
 
+Example snippet from `ci.yml`:
+
+```yaml
+release-artifact:
+  if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+  runs-on: ubuntu-latest
+  needs: build-and-test
+  steps:
+    - uses: actions/checkout@v3
+    - run: zip -r weather-tracking-system.zip .
+    - uses: actions/upload-artifact@v3
+      with:
+        name: weather-artifact
+        path: weather-tracking-system.zip
 ---
 
 ## 🔐 Branch Protection
