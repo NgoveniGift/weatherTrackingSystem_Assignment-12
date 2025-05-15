@@ -1,10 +1,10 @@
-# 🛠️ Contributing Guidelines – Weather Tracking System
+# Contributing Guidelines – Weather Tracking System
 
 Thank you for considering contributing to the Weather Tracking System! This project is open to student collaboration and community-driven improvements.
 
 ---
 
-## ✅ Getting Started
+## Getting Started
 
 1. **Fork the repository**
 2. **Clone your fork locally**:
@@ -26,7 +26,7 @@ Thank you for considering contributing to the Weather Tracking System! This proj
 
 ---
 
-## 📦 Development Standards
+## Development Standards
 
 - Use `rustfmt` to format code:
   ```bash
@@ -42,7 +42,7 @@ Thank you for considering contributing to the Weather Tracking System! This proj
 
 ---
 
-## 🔁 Pull Request Process
+## Pull Request Process
 
 1. Ensure your branch is **up to date** with `main`.
 2. Create a PR against `main` with a clear title and description.
@@ -51,7 +51,7 @@ Thank you for considering contributing to the Weather Tracking System! This proj
 
 ---
 
-## 🏷️ Issue Labels
+## Issue Labels
 
 We welcome all contributors!
 - `good-first-issue` – easy tasks for newcomers
@@ -59,6 +59,6 @@ We welcome all contributors!
 
 ---
 
-Happy coding! ✨
+Happy coding! 
 
 > Need help? Open an issue or contact the maintainers.
