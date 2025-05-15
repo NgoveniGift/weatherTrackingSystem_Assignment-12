@@ -1,10 +1,10 @@
-# 🌦️ Assignment 13 – CI/CD Pipeline for Weather Tracking System
+# Assignment 13 – CI/CD Pipeline for Weather Tracking System
 
 This README outlines the CI/CD automation and protection rules implemented for the Weather Tracking System project using **GitHub Actions**.
 
 ---
 
-## ✅ Local Development
+## Local Development
 
 To build and test the project locally:
 
@@ -15,11 +15,11 @@ cargo test
 
 ---
 
-## 🚀 CI/CD Pipeline Overview
+## CI/CD Pipeline Overview
 
 The CI/CD pipeline is configured in `.github/workflows/ci.yml`. It performs the following:
 
-### 🔁 Continuous Integration (CI)
+### Continuous Integration (CI)
 - **Trigger**: On `push` and `pull_request` to `main`
 - **Steps**:
   - Checkout code
@@ -27,7 +27,7 @@ The CI/CD pipeline is configured in `.github/workflows/ci.yml`. It performs the 
   - Build the project
   - Run unit & integration tests
 
-### 📦 Continuous Delivery (CD)
+### Continuous Delivery (CD)
 - **Trigger**: On direct `push` to `main` (e.g., merge)
 - **Steps**:
   - Archive the full project as `weather-tracking-system.zip`
@@ -50,19 +50,19 @@ release-artifact:
 ```
 ---
 
-## 🔐 Branch Protection
+## Branch Protection
 
 To ensure high code quality and production stability, the following rules are enforced on the `main` branch:
 
-- ✅ Require pull request reviews (at least 1)
-- ✅ Require status checks to pass (CI must succeed)
-- ✅ Block direct pushes
+- Require pull request reviews (at least 1)
+- Require status checks to pass (CI must succeed)
+- Block direct pushes
 
 More details in [`PROTECTION.md`](./PROTECTION.md)
 
 ---
 
-## 📁 Key Files
+## Key Files
 
 ```
 .github/workflows/ci.yml        # CI/CD workflow definition
@@ -72,7 +72,7 @@ openapi.yaml                    # OpenAPI spec for API documentation
 
 ---
 
-## ✅ Example Screenshots (not included in markdown)
+## Example Screenshots (not included in markdown)
 
 - Passing test badge
 - Branch protection rule screen
@@ -81,5 +81,5 @@ openapi.yaml                    # OpenAPI spec for API documentation
 
 ---
 
-📅 **Submitted:** May 2025
+
 
