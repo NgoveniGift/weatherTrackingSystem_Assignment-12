@@ -1,11 +1,11 @@
 # Weather Tracking System – Assignment 12
 
-## 📋 Overview
+## Overview
 This assignment focuses on building a service layer for the Weather Tracking System. The goal was to expose a RESTful API for CRUD operations on weather reports and document it using OpenAPI 3.0. It builds upon the repository and domain layers completed in Assignment 11.
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
 - **Domain Layer**: Defines core models like `WeatherReport`.
 - **Repository Layer**: Includes a generic `Repository` interface and an in-memory implementation.
@@ -15,18 +15,18 @@ This assignment focuses on building a service layer for the Weather Tracking Sys
 
 ---
 
-## 🧩 Features
+## Features
 
-- 📄 **CRUD** operations for Weather Reports.
-- 📦 **In-memory storage** via `HashMap`.
-- 🔌 **Service abstraction** for business logic.
-- 🌐 **REST API** built using `axum`.
-- 📚 **OpenAPI 3.0** specification for API documentation.
-- ✅ **Unit tests** for API functionality using `reqwest` and `tokio`.
+- **CRUD** operations for Weather Reports.
+- **In-memory storage** via `HashMap`.
+- **Service abstraction** for business logic.
+- **REST API** built using `axum`.
+- **OpenAPI 3.0** specification for API documentation.
+- **Unit tests** for API functionality using `reqwest` and `tokio`.
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 rc/
 ├── api/ # REST API routes and handlers
