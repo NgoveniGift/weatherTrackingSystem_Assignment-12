@@ -1,4 +1,4 @@
-# REFLECTION.md – Assignment 14: Peer Review and Open Source Experience
+# REFLECTION – Assignment 14: Peer Review and Open Source Experience
 
 This reflection highlights the lessons learned and challenges encountered during Assignment 14, which focused on preparing the Weather Tracking System for open-source collaboration.
 
